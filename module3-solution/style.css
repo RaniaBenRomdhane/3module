@@ -1,0 +1,27 @@
+.body{
+  width: 93%;
+  margin: 10px auto;
+  font-family: Centaur;
+  line-height: 1.2;
+  clear: both;
+}
+.boutton{
+color: rgb(11,11,11);
+border-bottom-color: white;
+font-family: Centaur;
+font-size: 15px;
+ height: 25px;
+ border-radius: 5px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+}
+.label{
+    font-style: italic;
+}
+a{  text-decoration: none;}
+a:hover , a:active {
+color: green;
+}
+.description{
+  color: grey;
+}
