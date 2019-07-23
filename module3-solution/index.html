@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <script  src="angular.min.js"> </script>
     <script src="app.js"> </script>
+    <link rel="stylesheet" href="style.css">
 
 
     <title>Narrow It Down Application</title>
 
   </head>
-  <body>
+  <body class="body">
 <h2>Welcome to "Narrow It Down" application :)</h2>
     <div ng-controller= 'NarrowItDownController as menu'>
 
       <input type="text" ng-model="menu.searchTerm" placeholder="Search term ">
-      <button ng-click="menu.clickButton()">Narrow it down for me</button>
+      <button class="boutton" ng-click="menu.clickButton()"><a href="#">Narrow it down for me</a></button>
       {{menu.msg}}{{menu.result}}
       <ol>
         <li ng-repeat=  "article in menu.founditems">
-          {{article.name}} *{{article.short_name}}* :{{article.description}}
-          <button ng-click="menu.removeItem()">Don't want this item</button>
+        <div class="label">
+ {{article.name}}  *{{article.short_name}}* :
+</div> <div class="description">
+  {{article.description}}
+</div>  <br>
+          <button class="boutton" ng-click="menu.removeItem()"><a href="#">Don't want this item</a></button>
         </li>
       </ol>
 
